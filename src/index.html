@@ -1,17 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Trejtowicz - Księgowa</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#experience">Doświadczenie</a></li>
+                <li><a href="#education">Wykształcenie</a></li>
+                <li><a href="#languages">Języki</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo" class="logo-image">
+            </div>
+            <div class="header-text">
+                <h1>Anna Trejtowicz</h1>
+                <p>Samodzielna księgowa, właściciel biura rachunkowego posiadająca ponad 20-letnie doświadczenie w prowadzeniu księgowości małych, średnich i dużych firm...</p>
+            </div>
+            <img src="img/accountants.png" alt="People gathering at the table discussing" class="header-image">
+        </div>
+    </header>
+    <main>
+        <!-- Catch Phrases -->
+        <div class="catch-phrase left">Profesjonalizm i doświadczenie</div>
+        <div class="catch-phrase right">Twoja pewność i spokój</div>
+        <div class="catch-phrase left">Indywidualne podejście</div>
+        <div class="catch-phrase right">Zaufanie i bezpieczeństwo</div>
+        <div class="catch-phrase left">Rzetelność i precyzja</div>
+        <div class="catch-phrase right">Terminowość i zaangażowanie</div>
 
+        <section id="about" class="fade-in container">
+            <h2>O mnie</h2>
+            <div class="grid">
+                <img src="img/accountant_lady.png" alt="Another professional accountant photo" class="about-image">
+                <div>
+                    <p>Specjalizuję się w wspieraniu przedsiębiorców w zakresie księgowości, kadr oraz rozliczaniu podatków...</p>
+                    <p>Dążę do zapewnienia najwyższej jakości pracy, która wspiera rozwój i stabilność finansową klienta...</p>
+                    <p>Praca w księgowości jest moja pasją i wyzwaniem w stałym rozwoju i podnoszeniu kwalifikacji poprzez udział w licznych szkoleniach...</p>
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="fade-in container">
+            <h2>Doświadczenie</h2>
+            <div class="job">
+                <h3>Własna działalnośc-biuro rachunkowe <span class="date">03/2012 - obecnie</span></h3>
+                <p>PHU ANDAR Anna Trejtowicz - Morąg</p>
+                <ul>
+                    <li>Obsługa księgowa różnych podmiotów gospodarczych tj. spółek z o.o., spółek komandytowych, spółek jawnych, działalności gospodarczej osób fizycznych, Prowadzenie ksiąg handlowych, ewidencji środków trwałych oraz naliczanie amortyzacji zgodnie z obowiązującymi przepisami.</li>
+                    <li>Precyzyjne księgowanie dokumentów finansowych, w tym faktur i rachunków.</li>
+                    <li>Przeprowadzanie analiz podatkowych i doradzanie w zakresie optymalizacji podatkowej. Sporządzanie sprawozdań finansowych oraz sprawozdań GUS.</li>
+                    <li>Terminowe przygotowywanie i składanie deklaracji podatkowych, VAT, CIT, PIT.</li>
+                    <li>Prowadzenie dokumentacji związanej z zatrudnieniami.</li>
+                    <li>Prowadzenie ksiąg handlowych oraz księgi przychodów i rozchodów.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Dyrektor finansowy <span class="date">06/2006 - 02/2012</span></h3>
+                <p>Bayou Polska spółka z o.o. - Morąg</p>
+                <ul>
+                    <li>Terminowe przygotowywanie i składanie deklaracji podatkowych, takich jak VAT, CIT, PIT. Współpraca z firmami zewnętrznymi i instytucjami państwowymi.</li>
+                    <li>Przygotowywanie dokumentacji niezbędnej do audytu, sporządzanie sprawozdań finansowych.</li>
+                    <li>Regularne aktualizowanie wiedzy z zakresu przepisów podatkowych i rachunkowości w celu zapewnienia zgodności działań z prawem.</li>
+                    <li>Prowadzenie księgowości zgodnie z obowiązującymi przepisami prawa i standardami rachunkowości.</li>
+                    <li>Monitorowanie terminów płatności i weryfikacja faktur, weryfikacja poprawności faktur i dokumentów księgowych.</li>
+                    <li>Prowadzenie ksiąg rachunkowych, obsługa systemów finansowo-księgowych.</li>
+                    <li>Przygotowywanie raportów finansowych, współpraca z bankami i instytucjami finansowymi.</li>
+                    <li>Dbanie o zgodność dokumentacji finansowej z obowiązującymi przepisami.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Samodzielny księgowy <span class="date">01/1997 - 05/2006</span></h3>
+                <p>Paged Sklejka S.A. - Morąg</p>
+                <ul>
+                    <li>Księgowanie operacji finansowych zgodnie z obowiązującymi standardami i przepisami rachunkowości, obsługa systemów finansowo-księgowych. Rozliczanie gospodarki materiałowej, sprzedaży krajowej i zagranicznej, analiza rozrachunków i windykacja należności.</li>
+                    <li>Regularne aktualizowanie wiedzy z zakresu przepisów podatkowych i rachunkowości w celu zapewnienia zgodności działań z prawem.</li>
+                </ul>
+                <img src="img/desk_view.png" alt="Top view of desk with documents and laptop" class="extra-image">
+            </div>
+        </section>
+        <section id="education" class="fade-in container">
+            <h2>Wykształcenie</h2>
+            <div class="education-item">
+                <h3>Zarządzanie finansami <span class="date">10/2011 - 06/2012</span></h3>
+                <p>Wyższa Szkoła Informatyki i Zarządzania im. Prof. Tadeusza Kotarbińskiego w Olsztynie - Olsztyn</p>
+            </div>
+            <div class="education-item">
+                <h3>Prawo podatkowe <span class="date">10/2010 - 06/2011</span></h3>
+                <p>UNIWERSYTET GDAŃSKI - Gdańsk</p>
+            </div>
+            <div class="education-item">
+                <h3>Rachunkowość <span class="date">10/2004 - 06/2005</span></h3>
+                <p>Uniwersytet Warmińsko-Mazurski - Olsztyn</p>
+            </div>
+            <div class="education-item">
+                <h3>Magister: Magister administracji <span class="date">10/1998 - 06/2002</span></h3>
+                <p>Uniwersytet Warmińsko-Mazurski - Olsztyn</p>
+            </div>
+            <div class="education-item">
+                <h3>Ekonomista <span class="date">09/1995 - 06/1996</span></h3>
+                <p>Liceum Ekonomiczne – Ostróda</p>
+            </div>
+        </section>
+        <section id="languages" class="fade-in container">
+            <h2>Języki</h2>
+            <p>Angielski: A2 (Podstawowy)</p>
+        </section>
+        <section id="contact" class="fade-in container">
+            <h2>Kontakt</h2>
+            <p>Adres: ul. Dębowa 18, 14-300 Morąg, Polska</p>
+            
+            <iframe width="1135" height="388" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="map" src="https://maps.google.com/maps?width=1135&amp;height=388&amp;hl=en&amp;q=D%C4%99bowa%2018%20Mor%C4%85g+()&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Anna Trejtowicz. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
 </html>

@@ -1,21 +1,299 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+/* Add container styling */
+.container {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-html, body {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  background-color: #fff;
+/* Catch phrases styling */
+.catch-phrase {
+    position: absolute;
+    width: 150px;
+    padding: 10px;
+    background-color: #505050;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Ensure catch phrases are above other elements */
+}
+
+.catch-phrase.left {
+    left: 10px; /* Adjusted to appear without scrolling */
+}
+
+.catch-phrase.right {
+    right: 10px; /* Adjusted to appear without scrolling */
+}
+
+/* Existing CSS rules */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #f4f4f9;
+}
+
+header {
+    position: relative;
+    background: url('img/header-background.png') no-repeat center center/cover;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 0;
+}
+
+header h1, header p, .logo {
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.1em;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Increased height */
+    object-fit: cover;
+    z-index: 2;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+.header-text h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.header-text p {
+    font-size: 1.2em;
+    line-height: 1.5;
 }
 
 main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
+    padding: 20px;
+    background-color: #e0e0e0;
+    position: relative; /* Ensure the catch phrases are positioned relative to the main container */
+    padding-left: 180px; /* Add padding to avoid overlap with left catch phrase */
+    padding-right: 180px; /* Add padding to avoid overlap with right catch phrase */
 }
 
-main > h1 {
-  text-align: center;
-  font-size: 3.5em;
+main h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+main p, main ul {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+main h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #444;
+}
+
+.job, .education-item {
+    margin-bottom: 20px;
+}
+
+.job .date, .education-item .date {
+    font-weight: normal;
+    color: #777;
+}
+
+.about-image {
+    float: right;
+    width: auto;
+    height: 80%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.extra-image {
+    float: right; /* Place on the side */
+    width: 30%; /* Make smaller */
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+main ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #505050;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    header p, main p, main ul {
+        font-size: 1em;
+    }
+
+    .about-image {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .extra-image {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .catch-phrase {
+        display: none; /* Hide catch phrases on smaller screens */
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-text {
+        max-width: 100%;
+    }
+
+    main {
+        padding-left: 20px; /* Adjust padding for smaller screens */
+        padding-right: 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* New styles for modern UI */
+nav {
+    background-color: #333;
+    padding: 10px;
+    position: relative;
+    z-index: 2; /* Ensure nav is above the header blur */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Styles for Google Maps */
+#map {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logo h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #505050;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #505050;
+}
+
+.logo-image {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+    margin-bottom: 10px;
 }
